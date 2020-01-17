@@ -9,13 +9,11 @@
 import sys
 import pexpect#https://pexpect.readthedocs.io/en/stable/api/pxssh.html
 from pexpect import pxssh
-#pigs = ['192.168.0.13','192.168.0.15','192.168.0.146','192.168.0.206','192.168.0.208','192.168.0.210','192.168.0.211','192.168.0.213','192.168.0.215','192.168.0.217']
-pigs = ['192.168.0.13']
+pigs = ['127.0.0.1']#pigs = ['192.168.0.1','192.168.0.2']
 cmds = ['cat ./.bash_history']
-fuzzUsers = ['papa']
-fuzzPasss = ['hsuR2112']
-
-class pig():
+fuzzUsers = ['admin']
+fuzzPasss = ['password']
+class pig(): #all my pigs have class
   def __init__(a_pig, name = 'Napoleon', trufflepath = False):
     a_pig.name = name
     a_pig.piglets = []#remember this is recrsive to a point
