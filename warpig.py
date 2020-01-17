@@ -24,7 +24,7 @@ from datetime import datetime
 import os
 
 cwd = os.getcwd()
-top_ports = ['6000','25', '65529','4444', '389', '27017', '21', '23', '8088', '8080', '3389', '5900', '7','8','9']
+top_ports = ['6000','25', '65529','4444', '389', '27017', '21', '23', '8088', '8080', '3389', '5900', '22','80','111']
 
 
 HOSTS = []
@@ -47,7 +47,7 @@ class pig:
                , pcappath = cwd+ '/evil'+time.strftime('%Y%m%d')+'.pcap'):
     a_pig.cwd = cwd
     a_pig.name = name
-    a_pig.ego = '192.168.0.15'
+    a_pig.ego = '127.0.0.1'
     a_pig.call = []
     a_pig.crap = []
     a_pig.doerpath = doerpath
