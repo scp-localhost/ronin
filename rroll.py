@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# rroll.py - 
+# Never know when this will come in handy
+# Simply for import to other projects
+# Not an example secure coding.
+#Author: scp
+#import random #always, always import random...
+
 rroll = ["","We're no strangers to love",
 "You know the rules and so do I",
 "A full commitment's what I'm thinking of",
