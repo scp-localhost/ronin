@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+# POC: portScanWithRoll.py - 
+# If quiet is not your thing
+# Send Rick with your pin
+# Scan array for open (simple handshake)
+# Send all 52 lines of Rick Roll on open socket
+# Recieve callfrom Net Admin watching Wireshark asking you to cut it the F-out
+# Not an example secure coding.
+#Author: scp
+#import random #always, always import random...
 import socket
 import subprocess
 import sys
