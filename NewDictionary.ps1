@@ -10,7 +10,8 @@
 #powershell -ExecutionPolicy Bypass -file .\NewDictionary.ps1
 $ppath1="$env:appdata" + "\Roaming\Microsoft\UProof\DontBeA.dic"
 $ppath2="$env:appdata" + "\Roaming\Microsoft\UProof"
-$source="Y:\ps\DontBeA.dic"
+#Assumes upload file exists in PWD
+$source=".\DontBeA.dic"
 If (Test-Path $ppath1){
   $lastwrite = (get-item $ppath1).LastWriteTime
   $timespan = new-timespan -days 30
@@ -21,7 +22,9 @@ If (Test-Path $ppath1){
 }
 $u = [Security.Principal.WindowsIdentity]::GetCurrent().Name.Substring([Security.Principal.WindowsIdentity]::GetCurrent().Name.IndexOf('\')+1)
 #$r="hkcu:\software\microsoft\shared tools\proofing tools\1.0\custom dictionaries"
-$r="hklm:\software\microsoft\shared tools\foo"
+#above key path ~should be right for installed Word ...???
+#below is ~my test key...must exist or err
+$r="hklm:\software\microsoft\shared tools\foo"#!!!Change this to your key
 $rKey1="$u"
 $rKey2="$u" + "_external"
 $rKey3="$u" + "_roamed"
