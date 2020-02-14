@@ -9,11 +9,11 @@ from rroll import rroll
 subprocess.call('clear', shell=True)
 
 #address = socket.gethostbyname('example.com')
-#address = '127.0.0.1'
+address = '127.0.0.1'
 print ("-" * 60)
 print ("Please wait, scanning remote host", address)
 print ("-" * 60)
-while 1:
+if 1:#while 1:
     # Check what time the scan started
     t1 = datetime.now()
     try:
