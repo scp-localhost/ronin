@@ -1,4 +1,11 @@
 #!/usr/bin/env python
+# socketZardoz.py - 
+# Send zardoz to IP and port
+# Useful if you just aren't getting the attention an open socket deserves
+# ***This is SOOO the packets you want forensics to reconstruct!
+# Not an example secure coding.
+#Author: scp
+#import random #always, always import random...
 import sys, socket
 import zarBits
 server = (('127.0.0.1', 6666))#When I think about you...
